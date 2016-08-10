@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IndicatorView">
+        <attr name="normalCircleColor" format="color" />
+        <attr name="slideCircleColor" format="color" />
+        <attr name="circleWidth" format="dimension" />
+        <attr name="circleMargin" format="dimension" />
+        <attr name="topMargin" format="dimension" />
+        <attr name="bottomMargin" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RatioImageView">
+        <attr name="ratio" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="NineGridLayout">
+        <attr name="sapcing" format="dimension"/>
+    </declare-styleable>
+</resources>

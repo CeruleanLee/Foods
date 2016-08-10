@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tj_zuire_goods"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最热商品"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="150dp">
+
+        <com.group.newproject.views.AutoScrollViewPager
+            android:id="@+id/tj_hot_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+        </com.group.newproject.views.AutoScrollViewPager>
+        <LinearLayout
+            android:id="@+id/tj_got_indiacateConrainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_alignBottom="@id/tj_hot_viewpager"
+            ></LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/tj_got_width"
+            android:layout_width="10dp"
+            android:layout_centerInParent="true"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+
+            android:id="@+id/tj_hot_left_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/tj_got_width"
+            android:background="@drawable/tj_hot_layout_bg"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true">
+
+
+            <ImageView
+                android:id="@+id/tj_hot_left_img1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"/>
+            <TextView
+                android:id="@+id/tj_hot_left_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:text="测试"
+                />
+            <TextView
+                android:id="@+id/tj_hot_left_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="3dp"
+                android:textColor="#F85422"/>
+
+        </LinearLayout>
+        <RelativeLayout
+
+            android:id="@+id/tj_hot_left_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/tj_got_width"
+            android:background="@drawable/tj_hot_layout_bg"
+            android:layout_below="@id/tj_hot_left_layout1"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/tj_hot_left_img2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"/>
+            <TextView
+                android:id="@+id/tj_hot_left_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tj_hot_left_img2"
+                android:layout_alignLeft="@id/tj_hot_left_img2"
+                android:layout_marginLeft="3dp"
+                android:text="测试"
+                />
+            <TextView
+                android:id="@+id/tj_hot_left_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@id/tj_hot_left_img2"
+                android:layout_below="@id/tj_hot_left_tv2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="3dp"
+                android:textColor="#F85422"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:id="@+id/tj_hot_right_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/tj_got_width"
+            android:background="@drawable/tj_hot_layout_bg"
+            android:layout_alignBottom="@id/tj_hot_left_layout1"
+            android:layout_alignTop="@id/tj_hot_right_layout1"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/tj_hot_right_img1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"/>
+            <TextView
+                android:id="@+id/tj_hot_right_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:text="测试"
+                />
+            <TextView
+                android:id="@+id/tj_hot_right_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="3dp"
+                android:textColor="#F85422"/>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:id="@+id/tj_hot_right_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/tj_got_width"
+            android:background="@drawable/tj_hot_layout_bg"
+            android:layout_below="@id/tj_hot_right_layout1"
+            android:layout_alignBottom="@id/tj_hot_left_layout2"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/tj_hot_right_img2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"/>
+            <TextView
+                android:id="@+id/tj_hot_right_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:text="测试"
+                />
+            <TextView
+                android:id="@+id/tj_hot_right_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="3dp"
+                android:textColor="#F85422"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

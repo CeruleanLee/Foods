@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <LinearLayout
+            android:id="@+id/layout_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <CheckedTextView
+                android:id="@+id/tv_last"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:gravity="center"
+                android:text="最新"
+                android:textSize="19sp"
+                android:textColor="@color/selector_home_checkedtv_color" />
+
+            <CheckedTextView
+                android:id="@+id/tv_host"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="最热"
+                android:textSize="19sp"
+                android:layout_marginLeft="35dp"
+                android:textColor="@color/selector_home_checkedtv_color" />
+
+            <CheckedTextView
+                android:id="@+id/tv_special"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="专辑"
+                android:textSize="19sp"
+                android:layout_marginLeft="35dp"
+                android:textColor="@color/selector_home_checkedtv_color" />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/lineContainer"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/layout_tab">
+
+            <View
+                android:id="@+id/vedio_line"
+                android:layout_marginLeft="55dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_red_bg" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.group.newproject.ui.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tj_zhuanti"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日推荐"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/tj_today_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/top_fackbaek_icon_night"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/today_img_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="255dp">
+
+        <ImageView
+            android:id="@+id/today_img1"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/today_img1"
+            android:layout_alignBottom="@id/today_img1"
+            android:background="@drawable/round_bg"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/today_img_layout2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="255dp">
+
+        <ImageView
+            android:id="@+id/today_img2"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/today_img2"
+            android:layout_alignBottom="@id/today_img2"
+            android:background="@drawable/round_bg"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/today_img_layout3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="255dp">
+
+        <ImageView
+            android:id="@+id/today_img3"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/today_img3"
+            android:layout_alignBottom="@id/today_img3"
+            android:background="@drawable/round_bg"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="150dp">
+
+        <com.group.newproject.views.AutoScrollViewPager
+            android:id="@+id/tj_today_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+        </com.group.newproject.views.AutoScrollViewPager>
+        <LinearLayout
+            android:id="@+id/tj_today_indiacateConrainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_alignBottom="@id/tj_today_viewpager"
+            ></LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/tj_guess_youlike"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="猜你喜欢"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/guess_update_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:55为您更新"
+                android:textColor="#afadad"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

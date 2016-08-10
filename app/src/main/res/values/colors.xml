@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tab_text">#999999</color>
+    <color name="tab_text_selected">#ffFF4B38</color>
+    <color name="baseColor">#ffFF4B38</color>
+   <!-- 文字选中颜色 #FF4B38 -->
+    
+    
+    
+</resources>

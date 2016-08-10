@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:id="@+id/find_lv_item_ty3"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/f_type3_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成都现在最关注的菜谱"
+            />
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:id="@+id/f_type3_tag"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击更多"
+            android:background="@drawable/find_tv_bg"
+            android:padding="2dp"
+            android:textColor="#97DAFA"
+            />
+        <ImageView
+            android:id="@+id/f_type3_img"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+    </LinearLayout>
+</LinearLayout>
+
+

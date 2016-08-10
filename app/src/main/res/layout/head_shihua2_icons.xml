@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sh_head2_viewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:focusable="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/sh_head2_shiguangImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+              />
+
+            <TextView
+                android:id="@+id/sh_head2_shiguang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="餐桌时光" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/sh_head2_hongbeiImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+              />
+
+            <TextView
+                android:id="@+id/sh_head2_hongbei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="玩转烘焙" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/sh_head2_ketangImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+              />
+
+            <TextView
+                android:id="@+id/sh_head2_ketang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美食课堂" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/sh_head2_zuiInImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+      />
+
+            <TextView
+                android:id="@+id/sh_head2_zuiIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最IN活动" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckedTextView
+            android:id="@+id/shihuaFrag_newestTv"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_shfrag_newest_bg"
+            android:checked="true"
+            android:clickable="true"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="最新"
+            android:textColor="@color/selector_shfrag_textchecked"
+            android:textSize="16dp"
+
+            />
+
+        <CheckedTextView
+            android:id="@+id/shihuaFrag_hotestTv"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_shfrag_hotest_bg"
+            android:checked="false"
+            android:clickable="true"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="最热"
+            android:textColor="@color/selector_shfrag_textchecked"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

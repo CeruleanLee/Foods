@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:id="@+id/find_lv_headitem"
+    >
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/faxian_shichai"
+        />
+    <ImageView
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/faxian_caidan"
+        />
+    <ImageView
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/faxian_zhuanti"
+        />
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/faxian_wenzhang"
+        />
+</LinearLayout>

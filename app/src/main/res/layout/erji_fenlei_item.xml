@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/erji_fenlei_item_titleTv"
+            android:layout_width="260px"
+            android:layout_height="260px"
+            android:gravity="center"
+            android:text="猪"
+            android:textColor="#ffffff"
+            android:background="#ff3535"/>
+        <com.group.newproject.views.MyGridView
+            android:id="@+id/erji_fenlei_gridview"
+            android:layout_width="match_parent"
+            android:numColumns="3"
+            android:layout_marginLeft="5dp"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            android:scrollbars="none"
+            android:layout_height="500dp">
+
+        </com.group.newproject.views.MyGridView>
+    </LinearLayout>
+</LinearLayout>
